@@ -74,7 +74,7 @@ jobs:
         if [ ${{ inputs.source }} == 'openwrt' ]; then
           git clone --depth=1 https://github.com/lkiuyu/openwrt-ufi openwrt
         elif [ ${{ inputs.source }} == 'immortalwrt' ]; then
-          git clone --depth=1 https://github.com/lkiuyu/immortalwrt openwrt
+          git clone --depth=1 https://github.com/xuxin1955/immortalwrt master
         else
           git clone --depth=1 -b msm8916 --single-branch https://github.com/feryw/immortalwrt openwrt
         fi
